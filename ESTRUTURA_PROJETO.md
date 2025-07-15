@@ -28,22 +28,6 @@ tea_quiz/
 | **Aprendizado** | Conceitos básicos | Boas práticas |
 | **Expansibilidade** | Limitada | Alta |
 
-## 🎯 Público-Alvo
-
-### Versão Simples - Ideal para:
-- ✅ Estudantes iniciantes em C
-- ✅ Primeiro contato com programação
-- ✅ Aulas introdutórias
-- ✅ Exercícios básicos
-- ✅ Quem quer entender rapidamente
-
-### Versão Avançada - Ideal para:
-- ✅ Estudantes de nível intermediário
-- ✅ Projetos de disciplina
-- ✅ Demonstração de boas práticas
-- ✅ Base para expansões futuras
-- ✅ Portfólio profissional
-
 ## 🛠️ Comandos Rápidos
 
 ### Para testar a versão simples:
