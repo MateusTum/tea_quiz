@@ -10,14 +10,14 @@
  * Exibe mensagem de parabéns para resposta correta
  */
 void mensagem_acerto() {
-    printf("\n🎉 Parabéns! Excelente trabalho!\n");
+    printf("\n*** PARABENS! Excelente trabalho! ***\n");
 }
 
 /**
  * Exibe mensagem encorajadora para resposta incorreta  
  */
 void mensagem_erro() {
-    printf("\n😊 Quase lá! Tente de novo, você consegue!\n");
+    printf("\n>>> Quase la! Tente de novo, voce consegue! <<<\n");
 }
 
 /**
@@ -75,80 +75,85 @@ int main() {
     printf("    BEM-VINDO AO QUIZ MULTIDISCIPLINAR!\n");
     printf("          (Versão Simples)\n");
     printf("==============================================\n");
-    printf("Você terá 5 perguntas sobre diferentes áreas.\n");
+    printf("Voce tera 5 perguntas sobre diferentes areas.\n");
     printf("Cada acerto vale %d pontos!\n\n", PONTOS_POR_ACERTO);
     
     // Pergunta 1 - Algoritmos I
     if (fazer_pergunta(1, 
-        "Qual estrutura de repetição executa o bloco pelo menos uma vez?",
+        "Qual estrutura de repeticao executa o bloco pelo menos uma vez?",
         "A) for",
         "B) do-while",
         'B')) {
         pontos_totais += PONTOS_POR_ACERTO;
     }
-    printf("\nPontuação atual: %d pontos\n", pontos_totais);
+    printf("\nPontuacao atual: %d pontos\n", pontos_totais);
     printf("----------------------------------------------\n\n");
     
-    // Pergunta 2 - Fundamentos da Computação
+    // Pergunta 2 - Fundamentos da Computacao
     if (fazer_pergunta(2,
-        "Qual componente é responsável pelo processamento de dados no computador?",
+        "Qual componente e responsavel pelo processamento de dados no computador?",
         "A) CPU",
         "B) HD",
         'A')) {
         pontos_totais += PONTOS_POR_ACERTO;
     }
-    printf("\nPontuação atual: %d pontos\n", pontos_totais);
+    printf("\nPontuacao atual: %d pontos\n", pontos_totais);
     printf("----------------------------------------------\n\n");
     
-    // Pergunta 3 - Inglês Instrumental
+    // Pergunta 3 - Ingles Instrumental
     if (fazer_pergunta(3,
-        "O que significa 'debugging' em programação?",
+        "O que significa 'debugging' em programacao?",
         "A) Criar novos bugs",
         "B) Encontrar e corrigir erros",
         'B')) {
         pontos_totais += PONTOS_POR_ACERTO;
     }
-    printf("\nPontuação atual: %d pontos\n", pontos_totais);
+    printf("\nPontuacao atual: %d pontos\n", pontos_totais);
     printf("----------------------------------------------\n\n");
     
-    // Pergunta 4 - Metodologia Científica
+    // Pergunta 4 - Metodologia Cientifica
     if (fazer_pergunta(4,
-        "Qual é a primeira etapa do método científico?",
-        "A) Observação do problema",
+        "Qual e a primeira etapa do metodo cientifico?",
+        "A) Observacao do problema",
         "B) Coleta de dados",
         'A')) {
         pontos_totais += PONTOS_POR_ACERTO;
     }
-    printf("\nPontuação atual: %d pontos\n", pontos_totais);
+    printf("\nPontuacao atual: %d pontos\n", pontos_totais);
     printf("----------------------------------------------\n\n");
     
-    // Pergunta 5 - Matemática
+    // Pergunta 5 - Matematica
     if (fazer_pergunta(5,
-        "Se um algoritmo tem complexidade O(n²) e n=10, quantas operações aproximadamente?",
+        "Se um algoritmo tem complexidade O(n2) e n=10, quantas operacoes aproximadamente?",
         "A) 10",
         "B) 100",
         'B')) {
         pontos_totais += PONTOS_POR_ACERTO;
     }
-    printf("\nPontuação atual: %d pontos\n", pontos_totais);
+    printf("\nPontuacao atual: %d pontos\n", pontos_totais);
     printf("----------------------------------------------\n\n");
     
     // Resultado final
     printf("\n==============================================\n");
     printf("           RESULTADO FINAL\n");
     printf("==============================================\n");
-    printf("🏆 Pontuação total: %d pontos\n", pontos_totais);
-    printf("📊 Perguntas respondidas: %d\n", NUM_PERGUNTAS);
-    printf("💯 Taxa de acertos: 100%% (após tentativas)\n\n");
+    printf("*** Pontuacao total: %d pontos\n", pontos_totais);
+    printf("*** Perguntas respondidas: %d\n", NUM_PERGUNTAS);
+    printf("*** Taxa de acertos: 100%% (apos tentativas)\n\n");
     
     if (pontos_totais == NUM_PERGUNTAS * PONTOS_POR_ACERTO) {
-        printf("🎉 PARABÉNS! Você completou o quiz com sucesso!\n");
-        printf("🧠 Seu conhecimento multidisciplinar está excelente!\n");
+        printf("*** PARABENS! Voce completou o quiz com sucesso!\n");
+        printf("*** Seu conhecimento multidisciplinar esta excelente!\n");
     }
     
     printf("==============================================\n");
     printf("\nObrigado por participar do Quiz Multidisciplinar!\n");
-    printf("Continue estudando e aprendendo sempre! 📚✨\n\n");
+    printf("Continue estudando e aprendendo sempre!\n\n");
+    
+    // Pausa para evitar que o terminal feche
+    printf("Pressione ENTER para sair...");
+    getchar(); // Limpa buffer do scanf anterior
+    getchar(); // Aguarda o usuário pressionar ENTER
     
     return 0;
 } 

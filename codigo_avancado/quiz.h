@@ -29,20 +29,20 @@ void inicializar_perguntas(Pergunta perguntas[]);
 
 /**
  * Executa o quiz completo
- * @return pontuação total obtida
+ * @return pontuacao total obtida
  */
 int executar_quiz();
 
 /**
  * Faz uma pergunta individual e processa a resposta
  * @param pergunta - estrutura da pergunta
- * @param numero - número da pergunta (1-5)
+ * @param numero - numero da pergunta (1-5)
  * @return 1 se acertou, 0 se errou
  */
 int fazer_pergunta(Pergunta pergunta, int numero);
 
 /**
- * Exibe mensagem de parabéns para resposta correta
+ * Exibe mensagem de parabens para resposta correta
  */
 void mensagem_acerto();
 
@@ -52,8 +52,8 @@ void mensagem_acerto();
 void mensagem_erro();
 
 /**
- * Exibe a pontuação final
- * @param pontos - pontuação total
+ * Exibe a pontuacao final
+ * @param pontos - pontuacao total
  */
 void exibir_resultado_final(int pontos);
 

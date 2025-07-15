@@ -12,7 +12,7 @@ int executar_quiz() {
     printf("==============================================\n");
     printf("    BEM-VINDO AO QUIZ MULTIDISCIPLINAR!\n");
     printf("==============================================\n");
-    printf("Você terá 5 perguntas sobre diferentes áreas.\n");
+    printf("Voce tera 5 perguntas sobre diferentes areas.\n");
     printf("Cada acerto vale %d pontos!\n\n", PONTOS_POR_ACERTO);
     
     // Inicializa as perguntas
@@ -23,7 +23,7 @@ int executar_quiz() {
         if (fazer_pergunta(perguntas[i], i + 1)) {
             pontos_totais += PONTOS_POR_ACERTO;
         }
-        printf("\nPontuação atual: %d pontos\n", pontos_totais);
+        printf("\nPontuacao atual: %d pontos\n", pontos_totais);
         printf("----------------------------------------------\n\n");
     }
     
@@ -74,11 +74,11 @@ int fazer_pergunta(Pergunta pergunta, int numero) {
  */
 void mensagem_acerto() {
     char mensagens[][100] = {
-        "🎉 Parabéns! Excelente trabalho!",
-        "🌟 Você acertou! Incrível!",
-        "👏 Fantástico! Continue assim!",
-        "✨ Perfeito! Você está mandando bem!",
-        "🎯 Acertou em cheio! Muito bem!"
+        "*** PARABENS! Excelente trabalho!",
+        "*** Voce acertou! Incrivel!",
+        "*** Fantastico! Continue assim!",
+        "*** Perfeito! Voce esta mandando bem!",
+        "*** Acertou em cheio! Muito bem!"
     };
     
     int indice = rand() % 5;
@@ -90,11 +90,11 @@ void mensagem_acerto() {
  */
 void mensagem_erro() {
     char mensagens[][100] = {
-        "😊 Quase lá! Tente de novo, você consegue!",
-        "💪 Não foi dessa vez, mas continue tentando!",
-        "🚀 Não desista! Você está no caminho certo!",
-        "💡 Pense um pouquinho mais e tente novamente!",
-        "⭐ Você pode fazer isso! Mais uma tentativa!"
+        ">>> Quase la! Tente de novo, voce consegue!",
+        ">>> Nao foi dessa vez, mas continue tentando!",
+        ">>> Nao desista! Voce esta no caminho certo!",
+        ">>> Pense um pouquinho mais e tente novamente!",
+        ">>> Voce pode fazer isso! Mais uma tentativa!"
     };
     
     int indice = rand() % 5;
@@ -109,13 +109,13 @@ void exibir_resultado_final(int pontos) {
     printf("\n==============================================\n");
     printf("           RESULTADO FINAL\n");
     printf("==============================================\n");
-    printf("🏆 Pontuação total: %d pontos\n", pontos);
-    printf("📊 Perguntas respondidas: %d\n", NUM_PERGUNTAS);
-    printf("💯 Taxa de acertos: 100%% (após tentativas)\n\n");
+    printf("*** Pontuacao total: %d pontos\n", pontos);
+    printf("*** Perguntas respondidas: %d\n", NUM_PERGUNTAS);
+    printf("*** Taxa de acertos: 100%% (apos tentativas)\n\n");
     
     if (pontos == NUM_PERGUNTAS * PONTOS_POR_ACERTO) {
-        printf("🎉 PARABÉNS! Você completou o quiz com sucesso!\n");
-        printf("🧠 Seu conhecimento multidisciplinar está excelente!\n");
+        printf("*** PARABENS! Voce completou o quiz com sucesso!\n");
+        printf("*** Seu conhecimento multidisciplinar esta excelente!\n");
     }
     
     printf("==============================================\n");
